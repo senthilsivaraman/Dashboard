@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: white;
+  font-weight: bolder;
 }
 
 /* navbar */
@@ -22,24 +23,30 @@ body {
 }
 
 .sidebar-link:hover {
-  background-color: #444;
+  background-color: rgba(247, 239, 166, 0.849);
   border-radius: 5px;
 }
 
 .current {
   background-color:yellow;
   border-radius: 7px;
-  box-shadow: 2px 5px 10px #111;
+  box-shadow: 2px 5px 10px rgb(59, 58, 58);
   transition: all .3s;
 }
 
 .current:hover {
-  background-color:yellow;
   border-radius: 7px;
-  box-shadow: 2px 5px 20px #111;
+  box-shadow: 2px 5px 20px rgb(240, 235, 163);
   transform: translateY(-1px);
 }
 
+.top-navbar{
+  background: rgba(229, 231, 231, 0.993); /* Green background with 30% opacity */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 7px 25px #999;
+}
 
 .search-input {
   background: transparent;
@@ -97,6 +104,17 @@ body {
 
 
 
+/* cards */
+.card-common {
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
+}
+
+.card-common:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-1px);
+}
+/* end of cards */
 
 
 
