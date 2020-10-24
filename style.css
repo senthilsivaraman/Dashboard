@@ -162,12 +162,6 @@ body {
   .bordered-deep-purple::-webkit-scrollbar-thumb {
   -webkit-box-shadow: none; }
   
-  .square::-webkit-scrollbar-track {
-  border-radius: 0 !important; }
-  
-  .square::-webkit-scrollbar-thumb {
-  border-radius: 0 !important; }
-  
   .thin::-webkit-scrollbar {
   width: 6px; }
   
