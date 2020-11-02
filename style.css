@@ -140,6 +140,12 @@ body {
 .calender{
   min-height: 480px;
 }
+
+.dashboardrow3tiles{
+  display: block;
+  max-height: 140px;
+  
+}
 /* end of cards */
 
 
