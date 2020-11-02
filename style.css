@@ -144,7 +144,15 @@ body {
 .dashboardrow3tiles{
   display: block;
   max-height: 140px;
+  box-shadow: 1px 2px 5px #999;
+  transition: all .4s;
   
+}
+
+
+.dashboardrow3tiles:hover {
+  box-shadow: 2px 3px 15px #999;
+  transform: translateY(-6px);
 }
 /* end of cards */
 
@@ -239,3 +247,36 @@ body {
   text-decoration: none;
   transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
+
+
+/* Footer */
+
+
+/*------- Footer Area Start -----------*/
+
+.copyright-text a:hover {
+  text-decoration: underline;
+  color: #3EC1D5;
+}
+
+.copyright-text a {
+  color: #444;
+}
+
+.copyright> p {
+  margin-bottom: 0;
+  color: #444;
+}
+
+.credits {
+  padding-top: 5px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+}
+
+/* Footer end*/
