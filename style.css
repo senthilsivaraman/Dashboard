@@ -131,6 +131,15 @@ body {
   box-shadow: 2px 3px 15px #999;
   transform: translateY(-1px);
 }
+
+
+.comingup {
+  min-height: 360px;;
+}
+
+.calender{
+  min-height: 480px;
+}
 /* end of cards */
 
 
