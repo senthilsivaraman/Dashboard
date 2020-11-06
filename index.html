@@ -16,34 +16,34 @@
 
      <!-- navbar -->
      <nav class="navbar navbar-expand-md navbar-light">
-      <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <button class="navbar-toggler  mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="myNavbar">
         <div class="container-fluid">
           <div class="row">
             <!-- sidebar -->
-            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
-              <a href="#" class="navbar-brand text-dark d-block mx-auto text-center py-3 mb-4 bottom-border">Maanavar</a>
-              <div class="bottom-border pb-3">
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top" id="mysidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+           
+              <div class="bottom-border pb-3 mt-5">
                 <img src="images/cust4.jpeg" width="50" class="rounded-circle mr-3">
                 <a href="#" class="text-dark">Sarah</a>
               </div>
               <ul class="navbar-nav flex-column mt-4">
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 current"><i class="fas fa-home text-warning fa-lg mr-3"></i>Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-chalkboard text-warning fa-lg mr-3"></i>Courses Enrolled</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-user-clock text-warning fa-lg mr-3"></i>Upcoming Deadlines</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-book text-warning fa-lg mr-3"></i>E-Library</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-warning fa-lg mr-3"></i>Messages</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-table text-warning fa-lg mr-3"></i>Sticky Notes</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-bullhorn text-warning fa-lg mr-3"></i>Announcements</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-warning fa-lg mr-3"></i>Settings</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-home text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Dashboard</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-chalkboard text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Courses Enrolled</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-user-clock text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Upcoming Deadlines</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-book text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">E-Library</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Messages</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-table text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Sticky Notes</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-bullhorn text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Announcements</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-dark p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-warning fa-lg mr-3"></i><span class="d-none d-md-inline">Settings</span></a></li>
               </ul>
             </div>
             <!-- end of sidebar -->
 
             <!-- top-nav -->
-            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto fixed-top py-2 top-navbar">
+            <!-- <div class="col-xl-10 col-lg-9 col-md-8 ml-auto fixed-top py-2 top-navbar">
               <div class="row align-items-center">
                 <div class="col-md-4 col-sm">
                   <h4 class="text-light text-dark text-uppercase mb-0">Dashboard</h4>
@@ -64,7 +64,7 @@
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
 
             <!-- end of top-nav -->
 
@@ -97,195 +97,201 @@
 
 
     <!-- cards -->
-    <section>
-      <div class="container-fluid">
-          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-            <div class="row pt-md-5 mt-md-3 mb-1">
-              
-              <div class="col-xl-4 col-sm-12 p-2">
-                <div class="card card-common">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <i class="fas fa-calendar fa-2x text-warning"></i>
-                      <div class="text-secondary ml-3">
-                        <h5>Todays Schedule</h5>
-                      </div>
-                    </div>
-                  </div>
+    <div id="main">
 
-                  <div class="card courselist example-1 scrollbar-deep-purple bordered-deep-purple thin">
-                    <ul class="list-group listclass="list-group-group-flush">
-                      <li class="list-group-item">Course 1 <span class="coursetime ml-3" >Start time - end time</span></li>
-                      <li class="list-group-item">Course 2</li>
-                      <li class="list-group-item">Course 3</li>
-                      <li class="list-group-item">Course 3</li>
-                      <li class="list-group-item">Course 3</li>
-                      <li class="list-group-item">Course 3</li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-             
-              <div class="col-xl-4 col-sm-12 p-2">
-                <div class="card card-common">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <i class="fas fa-bullhorn fa-2x text-warning"></i>
-                      <div class="text-secondary ml-3">
-                        <h5>University Announcements</h5>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card newslist example-1 scrollbar-deep-purple bordered-deep-purple thin">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item"><marquee behavior="scroll" direction="left">News 1</marquee></li>
-                      <li class="list-group-item">News 2</li>
-                      <li class="list-group-item">News 3</li>
-                      <li class="list-group-item">News 4</li>
-                      <li class="list-group-item">News 5</li>
-                      <li class="list-group-item">News 6</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-
-              <div class="col-xl-4 col-sm-12 p-2">
-                <div class="card card-common">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <i class="fas fa-stream fa-2x text-warning"></i>
-                      <div class="text-secondary ml-3">
-                        <h5>Live Classroom</h5>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card blink_me newslist example-1 scrollbar-deep-purple bordered-deep-purple thin">
-                    <ul class="list-group list-group-flush text-danger">
-                      <li class="list-group-item">Live 1</li>
-                      <li class="list-group-item">Live 2</li>
-                    </ul>
-                  </div>
-
-                 
-                </div>
-              </div>
-              
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- end of cards -->
-
-    <!-- cards Sec 2-->
-    <section>
-      <div class="container-fluid">
-      
-          <div class="col-xl-10 col-lg-9 col-md-8  ml-auto">
-            <div class="row pt-md-5 mt-md-3 mb-2">
-              
-              <div class="col-xl-4 col-sm-12 p-2">
-
-                <div class="row-xl-12">
+      <section>
+        <div class="container-fluid" >
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+              <div class="row pt-md-5 mt-md-3 mb-1">
+                
+                <div class="col-xl-4 col-sm-12 p-2">
                   <div class="card card-common">
                     <div class="card-body">
                       <div class="d-flex">
-                        <i class="fas fa-chalkboard fa-2x text-warning"></i>
+                        <i class="fas fa-calendar fa-2x text-warning"></i>
                         <div class="text-secondary ml-3">
-                          <h5>Courses Enrolled</h5>
+                          <h5>Todays Schedule</h5>
                         </div>
                       </div>
                     </div>
   
                     <div class="card courselist example-1 scrollbar-deep-purple bordered-deep-purple thin">
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Course 1</li>
+                      <ul class="list-group listclass="list-group-group-flush">
+                        <li class="list-group-item">Course 1 <span class="coursetime ml-3" >Start time - end time</span></li>
                         <li class="list-group-item">Course 2</li>
                         <li class="list-group-item">Course 3</li>
+                        <li class="list-group-item">Course 3</li>
+                        <li class="list-group-item">Course 3</li>
+                        <li class="list-group-item">Course 3</li>
+  
                       </ul>
                     </div>
                   </div>
                 </div>
-
-                <div class="row-xl-12 mt-2">
-                  <div class="row m-1">
-                    <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
-                      <img src="images/grades.png" style="height: 50px;" alt="">
-                      <h3>Your Grades</h3>
+               
+                <div class="col-xl-4 col-sm-12 p-2">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <i class="fas fa-bullhorn fa-2x text-warning"></i>
+                        <div class="text-secondary ml-3">
+                          <h5>University Announcements</h5>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
-                      <img src="images/resource.png" style="height: 50px;" alt="">
-                      <h3>Resources</h3>
+  
+                    <div class="card newslist example-1 scrollbar-deep-purple bordered-deep-purple thin">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><marquee behavior="scroll" direction="left">News 1</marquee></li>
+                        <li class="list-group-item">News 2</li>
+                        <li class="list-group-item">News 3</li>
+                        <li class="list-group-item">News 4</li>
+                        <li class="list-group-item">News 5</li>
+                        <li class="list-group-item">News 6</li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+                <div class="col-xl-4 col-sm-12 p-2">
+                  <div class="card card-common">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <i class="fas fa-stream fa-2x text-warning"></i>
+                        <div class="text-secondary ml-3">
+                          <h5>Live Classroom</h5>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="card blink_me newslist example-1 scrollbar-deep-purple bordered-deep-purple thin">
+                      <ul class="list-group list-group-flush text-danger">
+                        <li class="list-group-item">Live 1</li>
+                        <li class="list-group-item">Live 2</li>
+                      </ul>
+                    </div>
+  
+                   
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- end of cards -->
+  
+      <!-- cards Sec 2-->
+      <section>
+        <div class="container-fluid">
+        
+            <div class="col-xl-10 col-lg-9 col-md-8  ml-auto">
+              <div class="row pt-md-5 mt-md-3 mb-2">
+                
+                <div class="col-xl-4 col-sm-12 p-2">
+  
+                  <div class="row-xl-12">
+                    <div class="card card-common">
+                      <div class="card-body">
+                        <div class="d-flex">
+                          <i class="fas fa-chalkboard fa-2x text-warning"></i>
+                          <div class="text-secondary ml-3">
+                            <h5>Courses Enrolled</h5>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="card courselist example-1 scrollbar-deep-purple bordered-deep-purple thin">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Course 1</li>
+                          <li class="list-group-item">Course 2</li>
+                          <li class="list-group-item">Course 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="row-xl-12 mt-2">
+                    <div class="row m-1">
+                      <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
+                        <img src="images/grades.png" style="height: 50px;" alt="">
+                        <h3>Your Grades</h3>
+                      </div>
+                      <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
+                        <img src="images/resource.png" style="height: 50px;" alt="">
+                        <h3>Resources</h3>
+                      </div>
+                    </div>
+                    
+                    <div class="row m-1">
+                      <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
+                        <img src="images/messages.png" style="height: 50px;" alt="">
+                        <h3>Messages</h3>
+                      </div>
+                      <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
+                        <img src="images/transcripts.jpg" style="height: 50px;" alt="">
+                        <h3>Transcripts</h3>
+                      </div>
                     </div>
                   </div>
                   
-                  <div class="row m-1">
-                    <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
-                      <img src="images/messages.png" style="height: 50px;" alt="">
-                      <h3>Messages</h3>
-                    </div>
-                    <div class="col mr-1 mt-2 bg-primary dashboardrow3tiles" onclick="" style="cursor: pointer;">
-                      <img src="images/transcripts.jpg" style="height: 50px;" alt="">
-                      <h3>Transcripts</h3>
-                    </div>
-                  </div>
+                 
                 </div>
-                
                
-              </div>
-             
-              <div class="col-xl-4 col-sm-12 p-2 text-center">
-                
-                <div class="card card-common comingup">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <i class="fas fa-chalkboard fa-2x text-warning"></i>
-                      <div class="text-secondary ml-3">
-                        <h5>Coming up</h5>
-                        <div class="dashupcome">
-                          <nav class="site-nav">
-                            <ul class="check">
-                              <li class="check-group-item"><a href="#">Today</a></li>
-                              <li class="check-group-item"><a href="#">Upcoming</a></li>
-                              <li class="check-group-item"><a href="#">Overdue</a></li>
-                            </ul>
-                          </nav>
+                <div class="col-xl-4 col-sm-12 p-2 text-center">
+                  
+                  <div class="card card-common comingup">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <i class="fas fa-chalkboard fa-2x text-warning"></i>
+                        <div class="text-secondary ml-3">
+                          <h5>Coming up</h5>
+                          <div class="dashupcome">
+                            <nav class="site-nav">
+                              <ul class="check">
+                                <li class="check-group-item"><a href="#">Today</a></li>
+                                <li class="check-group-item"><a href="#">Upcoming</a></li>
+                                <li class="check-group-item"><a href="#">Overdue</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                          
                         </div>
-                        
                       </div>
                     </div>
+  
                   </div>
-
                 </div>
-              </div>
-
-
-              <div class="col-xl-4 col-sm-12 p-2 text-center">
-                
-                <div class="card card-common calender">
-                  <div class="card-body">
-                    <div class="d-flex">
-                      <i class="fas fa-chalkboard fa-2x text-warning"></i>
-                      <div class="text-secondary ml-3">
-                        <h5>Calender</h5>
-                        
+  
+  
+                <div class="col-xl-4 col-sm-12 p-2 text-center">
+                  
+                  <div class="card card-common calender">
+                    <div class="card-body">
+                      <div class="d-flex">
+                        <i class="fas fa-chalkboard fa-2x text-warning"></i>
+                        <div class="text-secondary ml-3">
+                          <h5>Calender</h5>
+                          
+                        </div>
                       </div>
                     </div>
+  
                   </div>
-
                 </div>
+              
               </div>
-            
             </div>
-          </div>
-        
-      </div>
-    </section>
-    <!-- end of section2 cards -->
+          
+        </div>
+      </section>
+      <!-- end of section2 cards -->
+
+
+    </div>
+    
 
   
     <!-- Start Footer bottom Area -->

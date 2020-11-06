@@ -10,3 +10,20 @@ underlineMenuItems.forEach(function (item) {
         item.classList.add("active");
     });
 });
+
+
+var mini = true;
+
+function toggleSidebar() {
+  if (mini) {
+    console.log("opening sidebar");
+    document.getElementById("mysidebar").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "1px";
+    this.mini = false;
+  } else {
+    console.log("closing sidebar");
+    document.getElementById("mysidebar").style.width = "50px";
+    document.getElementById("main").style.marginLeft = "50px";
+    this.mini = true;
+  }
+}
